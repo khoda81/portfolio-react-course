@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useContext } from "react";
 import { Container, Typography, TextField, Button, Paper, CircularProgress } from "@mui/material";
 import { styled } from "@mui/system";
 import WeatherData from "./WeatherData";
 import { useLocation } from "react-router-dom";
+import { LightModeContext } from "../App";
 
 const WeatherAppContainer = styled(Container)(({ theme }) => ({
     display: "flex",
